@@ -1,42 +1,37 @@
-# Website
+# NCM Step_up Training
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This is a series of labs to build partners with skillsets on NCM Self-Service and in addition, integration with Calm BPs with runbooks and/or X-Play playbooks to automate day-2 tasks. 
+The series of labs starts with basic operations on building single-VM BP, multi-VM BPs and progressingly to creating runbooks and/or playbooks against the deployed apps. The last lab will enable the partners the opportunity to deploy and experience Nutanix Kubernetes Engine (NKE).
 
-### Installation
+### Lab 1
 
-```
-$ yarn
-```
+Creating webhooks with Slack for alerts/notifications
 
-### Local Development
+### Lab 2
 
-```
-$ yarn start
-```
+Creating a single VM BP
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Lab 3 
 
-### Build
+Automating Scaling a VM
+a. Scale horizontally
+b. Scale vertically
 
-```
-$ yarn build
-```
+### Lab 4
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Quarantine VMs with x-play & SIEM solution
 
-### Deployment
+### Lab 5
 
-Using SSH:
+Creating Multi-VM BPs
 
-```
-$ USE_SSH=true yarn deploy
-```
+### Lab 6
 
-Not using SSH:
+Using runbooks to automate day 2 operation
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+### Lab 7
+
+Deploying NKE with Self-Service
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 # ncmlab
