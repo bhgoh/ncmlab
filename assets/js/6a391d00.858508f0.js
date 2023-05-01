@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkncmlab=self.webpackChunkncmlab||[]).push([[3730],{596:e=>{e.exports=JSON.parse('{"permalink":"/ncmlab/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
