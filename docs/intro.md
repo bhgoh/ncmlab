@@ -1,47 +1,85 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# Getting Started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to Nutanix Cloud Manager (NCM) workshop.
 
-## Getting Started
+This workshop accompanies an instructor-led session that introduces NCM on Nutanix HCI on Acropolis Hypervisors (AHV). By completing all the labs, you will gain knowledge on creating single or multiple VM blueprints and link day 2 actions with them through runbooks or playbooks. You will gain insights into Nutanix v3_APIs and take advantage of it to automate mundane daily tasks.
 
-Get started by **creating a new site**.
+The lab is structure in a manner where you role play as an administrator in the corporate world, tackling daily tasks as the business requirement arises. Please read through the detail scenario and familiar yourself with the requirements prior to attempting the labs.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## What is new?
 
-### What you'll need
+- This workshop is build based on the following software versions:
+  - AOS 6.5
+  - Prism Central - pc.2022.6.0.3
+  - Calm 3.5
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+## Agenda
 
-Generate a new Docusaurus site using the **classic template**.
+These labs are designed to take you working with Calm blue prints,working with Nutanix APIs, creating day 2 runbooks/ playbooks. There is an additional section that will get you get hands-on deployment on Nutanix Kubernetes Engine (NKE) and get familiarise with CI/CD process in a Nutanix environment. 
 
-The classic template will automatically be added to your project after you run the command:
+## Lab Environment Details
 
-```bash
-npm init docusaurus@latest my-website classic
-```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### Access Instructions
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+The Nutanix clusters are hosted remotely and the recommended way to connect to the lab environment is as follows:
 
-## Start your site
 
-Run the development server:
 
-```bash
-cd my-website
-npm run start
-```
+### VPN
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Please reach out to your instructor for the links to download the VPN binaries.Once they are installed, please follow through the instructions below:
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+1. Once installation is completed, you will see this client icon in your task tray:
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+![](/img/icon_tray.png)
+
+2. Right click and open the client to add in the Gateways.
+
+![](/img/client_interface.png)
+
+3. Add in the connections provided by your instructor.
+
+![](/img/add_connection.png)
+
+4. Once the connection is added, close the configuration window.
+
+### Establish a VPN Session
+
+1. Right click on Ivanti Secure Access Client icon in the task tray.
+
+2. Hover over to the location and click connect.
+
+![](/img/establish_connection.png)
+
+3. Enter your the cluster user credentials as provided by your instructors.
+
+4. Complete the connection by pressing connect.
+
+5. Once you see a red icon as shown below. You are now ready to connect to the lab.
+![](/img/connected_icon.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[def]: /img/icon_tray.png
