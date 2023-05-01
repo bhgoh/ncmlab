@@ -1,0 +1,85 @@
+---
+title: "Lab 2 - Create A Single BP VM"
+---
+
+import Tabs from '@theme/TabItem';
+import TabsItem from '@theme/TabItem';
+
+## Create a Single Blueprint VM
+
+With **Projects** created in Calm, Sally is now ready to create application
+blueprint to solve the issues. However, before she embarks on it she wants to 
+test out Calm's IaaS features by creating and testing it on a single blueprint VM.
+
+# Create a SingleBP in Calm
+
+1. Go to Prism Central -> Services -> Calm.
+
+2. Click on ![](images/bp_icon.png) button then select **Single VM Blueprint**.
+
+3. Under Blueprint Settings, fill up the following:
+
+   - Name: <CentOS7_your initials>
+   - Project: <DMC3-POCxx_your_initials>
+   - Environment: <DMC3-POCxx_your_initials>
+
+   Click **VM details** to proceed to the next step.
+
+4. Name your blueprint with your initials e.g - <your_initials_BP>. In addition, as we are 
+   creating a CentOS machine,please ensure the displayed operating system shows "Linux". To proceed,
+   click **VM configuration**.
+
+:::note
+You will also notice that there is a **Clone from environment**
+button beside **Preset VM Config** where you can inherit all vm settings from what
+you have define in your environment. In this exercise we will learn how to make further
+customization to it.
+:::
+
+5. In **VM Configuration** window, fill in the details of the machine you wish to deploy: 
+
+      - Cluster:   <your_assigned_cluster>
+      - VM Name:   <your_initial>_@@{calm_int(calm_array_index) + 1}@@
+      - vCPU:   4
+      - Cores per vCPU:   2
+      - Memory:   8
+      - Under guest customization, please tick the checkbox beside **Guest Customization**
+        Copy and paste the follow cloud-init script:
+        
+        ```
+        #cloud-config
+        users:
+         - name: @@{cred_os.username}@@
+           groups: sudo
+           shell: /bin/bash
+           sudo: ['ALL=(ALL) NOPASSWD:ALL']
+           ssh-authorized-keys:
+             - @@{cred_os.public_key}@@
+         ```
+      - Disks: CentOS7.qcow2
+      - NICs:  Primary
+
+6. Click **Save**.
+
+7. Click **Launch** to deploy the blueprint.
+
+8. You can check on the deployment status under the **Audit** tab.
+
+9. Once the status switches from **Deployment** to **RUNNING**.  The task is completed!
+
+10. Congratulations you have successfully deployed your first vm!
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
